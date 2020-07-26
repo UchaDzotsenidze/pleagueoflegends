@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Media/Registration.css">
+    <link rel="icon" href="./assets/hiclipart.com.png">
+
+    <title>Registration</title>
+
+</head>
+<body>
+
+
+    <header>
+        <ul class="topnav">
+             <li> <img id="logopng" src="./assets/hiclipart.com.png"> </li>
+             <li> <a class="active" href="FirstPage.html">Home</a> </li>
+             <li> <a href="champions.html" >champions</a> </li>
+             <li> <a href="https://na.leagueoflegends.com/en-us/champions/" target="blank">Esports↗</a> </li>
+                <li> <a href="https://universe.leagueoflegends.com/en_US/" target="blank">universe↗</a> </li>
+                <li> <a href="https://merch.riotgames.com/en_US/" target="blank">shop↗</a> </li>
+                <li> <a href="https://support.riotgames.com/hc/en-us/" target="blank">support↗</a> </li>
+             <li> <a href="profile.html">Profile</a> </li>
+             <li> <a href="Registration.html"> registration </a> </li>
+        </ul>
+    </header>
+
+    <div class="wrapper">
+        <div class="title">
+            Registration
+        </div>
+
+        <form class="form" name="myform">
+            <div class="input_field">
+                <label > First Name</label>
+                <input id="fn" type="text" name="fname" class="input" required>
+            </div>
+            
+            <div class="input_field">
+                <label > Last Name</label>
+                <input id="ln" type="text" name="lname" class="input" required>
+            </div>
+
+            <div class="input_field">
+                <label > Email </label>
+                <input id="em" type="text" name="email" class="input" required>
+            </div>
+
+            <div class="input_field">
+                <label > Password </label>
+                <input id="ps" type="password" name="pasword" class="input" required>
+            </div>
+
+            <div class="input_field">
+                <label > Confirm Password</label>
+                <input id="cpsw" type="password" name="cpassword" class="input" required> 
+            </div>
+
+            <div class="input_field">
+                <div class="customSelect">
+                    <select>
+                        <option value=""> Select </option>
+                        <option value="eune"> Europe Nordic & East	EUNE (EUN1) </option>
+                        <option value="euw"> Europe West  EUW (EUW1) </option>
+                        <option value="br"> Brazil	BR (BR1) </option>
+                        <option value="lan"> Latin America North  LAN (LA1) </option>
+                        <option value="las"> Latin America South  LAS (LA2) </option>
+                        <option value="na"> North America  NA (NA1)	 </option>
+                        <option value="ru"> Russia	RU (RU1) </option>
+                        <option value="tr"> Turkey	TR (TR1)	 </option>
+                        <option value="jp"> Japan	JP (JP1) </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="terms">
+                <label class="check"> 
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                </label>
+                <p> Agreed Terms And Conditions </p>
+            </div>
+
+            <div class="register input_field">
+                <button id="btn" class="registerbtn" onclick="Check()"> register </button>
+                    
+            </div>
+
+
+        </form>
+    </div>
+    
+    <script src="./source/main.js">
+    </script>
+</body>
+</html>

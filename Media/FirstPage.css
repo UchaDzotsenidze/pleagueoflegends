@@ -1,0 +1,238 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#logopng{
+    width: 40px;
+}
+
+html{
+    width: 100vw;
+}
+
+
+a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 4px 0;
+    transition: .5s;
+    font-family: 'Sora', sans-serif;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: gold;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+a:hover{
+    color: gray;
+}
+
+a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.topnav{
+
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    list-style-type: none;
+    background-color: #0b0e02;
+    height: 100px;
+    top: 0px;
+}
+
+li {
+    
+    padding: 6px 0;
+}
+
+
+
+.d1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    min-width: 100%; 
+    min-height: 80%;
+    content: "";
+    z-index: 50;
+}
+
+
+.d2{
+    position: absolute;
+    min-width: 100%;
+    left: 0; 
+    top: 1050px;
+    color: white;
+    background-color: #0b0e02;
+    content: "";
+    z-index: 50;
+}
+
+/* d2::after{
+    content: '';
+    position: absolute;
+    top: 200px; right: 0;
+    bottom: 0; left: 480px;
+    background: url(https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-pl/production/en-pl/static/assassin-three-3b9f65b6c20d5779628f7a8b04b43819.png)
+} */
+
+.akali1{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    left: 300px;
+    top: 50px;
+}
+.akali2{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    left: 730px;
+    top: 295px;
+}
+
+.champ{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    left: 1300px;
+    font-family: 'Sora', sans-serif;
+}
+
+.ttl{
+    position: absolute;
+    right: 0;
+    top: 120px;
+    left: 1300px;
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+}
+
+.desc{
+    position: absolute;
+    right: 0;
+    top: 240px;
+    left: 1300px;
+    font-family: 'Sora', sans-serif;
+}
+
+.d3{
+    position: absolute;
+    width: 100%;
+    left: -255px;
+    margin-right: 100px;
+    top: 1750px;
+    height: 500px;
+    /* overflow-y: hidden; */
+}
+
+.champ1{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    left: 1400px;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 40px;
+}
+
+.ttl1{
+    position: absolute;
+    right: 0;
+    top: 160px;
+    left: 1500px;
+    font-family: 'Sora', sans-serif;
+    font-size: 100px;
+    color: lightpink;
+}
+
+.desc1{
+    position: absolute;
+    top: 350px;
+    left: 1300px;
+    font-size: 30px;
+    font-family: 'Sora', sans-serif;
+    border-right: 3px solid indigo;
+    color:white;
+}
+
+.d1::after{
+
+    content: '';
+    position: absolute;
+    top: 200px; right: 0;
+    bottom: 0; left: 480px;
+    background: url(https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-pl/production/en-pl/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png) no-repeat;
+}
+
+
+
+@media (min-width: 321px) and (max-width:768px){
+    .topnav{
+
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        background-color: #0b0e02;
+        height: 50px;
+        margin-left: -10px;
+        margin-right: -10px;
+        width: 401px;
+    }
+
+    li {
+    
+        font-size: 7px;
+
+    }
+
+    .myvideo{
+        max-width: 100%;
+  height: auto;
+    }
+
+
+    .d2{
+        position: absolute;
+        left: 430px;
+    }
+    
+    .d1::after{
+    
+        content: '';
+        position: absolute;
+        top: 200px; right: 0;
+        bottom: 0; left: 480px;
+        background: url(https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-pl/production/en-pl/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png) no-repeat;
+    }
+
+
+}
+
